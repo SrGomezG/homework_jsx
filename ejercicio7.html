@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Santiago Gomez Garcia">
+    <meta name="keywords" content="html, css, example, homework, basics, jsx">
+    <meta name="description" content="Ejercicios JSX">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div id="root">
+        <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+        // nota cada codigo que veas documentado de aca para abajo
+        // seran diferentes formas de realizarlo con jsx los coloco para
+        // que podamos probar y mirar diferentes formas de como podriamos realizarlos
+        // los 12 ejercicios
+
+        // Ejercicio 7.
+        const data = {
+            title_1: "Destinos Turísticos", title_2: "América",
+            paragraph_1: "Argentina", paragraph_2: "Brasil", paragraph_3: "Chile",
+            paragraph_4: "Colombia", paragraph_5: "Estados Unidos", paragraph_6: "México",
+            paragraph_7: "Perú", paragraph_8: "Venezuela", paragraph_9: "Buenos Aires",
+            paragraph_10: "Bariloche", paragraph_11: "Río de Janeiro", paragraph_12: "Brasilia",
+            paragraph_13: "Santiago", paragraph_14: "Valparaiso", paragraph_15: "Bogotá",
+            paragraph_16: "Cartagena de Indias", paragraph_17: "New York", paragraph_18: "San Francisco",
+            paragraph_19: "Cancún", paragraph_20: "Acapulco", paragraph_21: "Lima",
+            paragraph_22: "Cuzco", paragraph_23: "Margarita", paragraph_24: "Mérida",
+        }
+        const titular1 = <h1>{data.title_1}</h1>;
+        const subtitular = <h2>{data.title_2}</h2>;
+        const parrafito = <p>{data.paragraph_1}</p>;
+        const parrafito2 = <p>{data.paragraph_2}</p>;
+        const parrafito3 = <p>{data.paragraph_3}</p>;
+        const parrafito4 = <p>{data.paragraph_4}</p>;
+        const parrafito5 = <p>{data.paragraph_5}</p>;
+        const parrafito6 = <p>{data.paragraph_6}</p>;
+        const parrafito7 = <p>{data.paragraph_7}</p>;
+        const parrafito8 = <p>{data.paragraph_8}</p>;
+        const parrafito9 = <p>{data.paragraph_9}</p>;
+        const parrafito10 = <p>{data.paragraph_10}</p>;
+        const parrafito11 = <p>{data.paragraph_11}</p>;
+        const parrafito12 = <p>{data.paragraph_12}</p>;
+        const parrafito13 = <p>{data.paragraph_13}</p>;
+        const parrafito14 = <p>{data.paragraph_14}</p>;
+        const parrafito15 = <p>{data.paragraph_15}</p>;
+        const parrafito16 = <p>{data.paragraph_16}</p>;
+        const parrafito17 = <p>{data.paragraph_17}</p>;
+        const parrafito18 = <p>{data.paragraph_18}</p>;
+        const parrafito19 = <p>{data.paragraph_19}</p>;
+        const parrafito20 = <p>{data.paragraph_20}</p>;
+        const parrafito21 = <p>{data.paragraph_21}</p>;
+        const parrafito22 = <p>{data.paragraph_22}</p>;
+        const parrafito23 = <p>{data.paragraph_23}</p>;
+        const parrafito24 = <p>{data.paragraph_24}</p>;
+
+        const element = (
+            <div class="contenido">
+                {titular1}
+                {subtitular}
+                <ol class="contenido">
+                    <li>{parrafito}</li>
+                    <ol class="a">
+                        <li>{parrafito9}</li>
+                        <li>{parrafito10}</li>
+                    </ol>
+                    <li>{parrafito2}</li>
+                    <ol class="b">
+                        <li>{parrafito11}</li>
+                        <li>{parrafito12}</li>
+                    </ol>
+                    <li>{parrafito3}</li>
+                    <ol class="c">
+                        <li>{parrafito13}</li>
+                        <li>{parrafito14}</li>
+                    </ol>
+                    <li>{parrafito4}</li>
+                    <ol class="d">
+                        <li>{parrafito15}</li>
+                        <li>{parrafito16}</li>
+                    </ol>
+                    <li>{parrafito5}</li>
+                    <ol class="e">
+                        <li>{parrafito17}</li>
+                        <li>{parrafito18}</li>
+                    </ol>
+                    <li>{parrafito6}</li>
+                    <ol class="f">
+                        <li>{parrafito19}</li>
+                        <li>{parrafito20}</li>
+                    </ol>
+                    <li>{parrafito7}</li>
+                    <ol class="g">
+                        <li>{parrafito21}</li>
+                        <li>{parrafito22}</li>
+                    </ol>
+                    <li>{parrafito8}</li>
+                    <ol class="h">
+                        <li>{parrafito23}</li>
+                        <li>{parrafito24}</li>
+                    </ol>
+                </ol>
+            </div>
+        );
+
+
+        // Renderiamos o pintamos
+        ReactDOM.render(
+            element,// estructura jsx para pintar
+            document.getElementById('root')// elemento donde se pintara
+        );
+    </script>
+</body>
+
+</html>

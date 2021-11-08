@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Santiago Gomez Garcia">
+    <meta name="keywords" content="html, css, example, homework, basics, jsx">
+    <meta name="description" content="Ejercicios JSX">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div id="root">
+        <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+        // nota cada codigo que veas documentado de aca para abajo
+        // seran diferentes formas de realizarlo con jsx los coloco para
+        // que podamos probar y mirar diferentes formas de como podriamos realizarlos
+        // los 12 ejercicios
+
+        // Ejercicio 8.
+
+        const data = {
+            titulo: "Tu concierto",
+            parrafo: "Bienvenido a este blog de conciertos",
+        }
+
+        const titulito = <h1 class="title">{data.titulo}</h1>;
+        const parrafato = <p>{data.parrafo}</p>;
+
+
+        const element = (
+            <div>
+                <img src="./multimedia/silueta-de-personas-celebrando.jpg" width="150" align="left" />
+                {titulito}
+                <br /><br /><br />
+                {parrafato}
+                <img src="./multimedia/los-oidos-concierto.jpg" />
+            </div>
+        );
+
+        // Renderiamos o pintamos
+        ReactDOM.render(
+            element,// estructura jsx para pintar
+            document.getElementById('root')// elemento donde se pintara
+        );
+    </script>
+</body>
+
+</html>
